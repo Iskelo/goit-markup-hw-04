@@ -4,6 +4,7 @@
 	--active-color: #2196F3;
 	--background-footer: #2F303A;
 	--background-team: #F5F4FA;
+	--icons: #AFB1B8;
 	--indent: 30px;
 	--items: 1;
 }
@@ -172,9 +173,7 @@ align-items: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	margin: 0 auto;
-	background-color: var(--background-footer);
-	background: url(../images/hero/bg-hero.png);
-	background-repeat: no-repeat;
+	background: url(../images/hero/bg-hero.png), lightgray 0px -147.517px / 100% 170.667% no-repeat;
 	background-position: center;
 	background-size: cover;
 	letter-spacing: 0.06em;
@@ -330,7 +329,7 @@ align-items: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	fill: #AFB1B8;
+	fill: var(--icons);
 	width: 44px;
 	height: 44px;
 	background-color: #fff;
@@ -343,6 +342,52 @@ align-items: center;
 	background-color: var(--active-color);
 
 }
+
+/* 
+	|=============================
+	| PARTNERS
+	|=============================
+*/
+
+.partners {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.partners-title {
+	font-size: 36px;
+	color: var(--title-color);
+	text-align: center;
+	margin-bottom: 50px;
+}
+.partners-items {
+	display: flex;
+	--items: 6;
+}
+
+.partners-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+
+.partners-logo {
+	width: 170px;
+	padding: 16px 32px;
+	border: 1px solid var(--icons);
+	border-radius: 4px;
+	fill: var(--icons);
+}
+
+
+.partners-logo:hover,
+.partners-logo:focus{
+	fill: var(--active-color);
+	border: 1px solid var(--active-color);	
+}
+
 
 /* 
 	|=============================
@@ -395,6 +440,43 @@ address ul li a:focus {
 	opacity: 1;
 }
 
+.footer-container{
+	display: flex;
+	gap: 70px;
+}
+.footer-social{
+	margin-top: 15px;
+}
+.footer-social p{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.social-links {
+	display: flex;
+	gap: 10px;	
+}
+.footer-icons {
+	display: flex;	
+	justify-content: center;	
+}
+.footer-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: #fff;
+	width: 44px;
+	height: 44px;
+	background-color: rgba(255, 255, 255, 0.10);
+	border-radius: 50%;
+}
+.footer-icon:hover,
+.footer-icon:focus{
+	background-color: var(--active-color);
+}
+
+
 /* 
 	|=============================
 	| PORTFOLIO
@@ -433,6 +515,8 @@ address ul li a:focus {
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 0.03em;
 	font-weight: 500;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .btn:last-child {
@@ -457,7 +541,7 @@ address ul li a:focus {
 */
 .cards {
 	--items: 3;
-	margin-top: 50px;
+	margin-top: 50px;	
 }
 
 .card-title {
@@ -468,6 +552,9 @@ address ul li a:focus {
 	line-height: 2;
 }
 
+.card:hover, .card:focus{
+	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 .card-text {
 	color: var(--subtitle-color);
 	letter-spacing: .03em;
