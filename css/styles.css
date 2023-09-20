@@ -371,9 +371,7 @@ align-items: center;
 .partners-item {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	
-	
+	justify-content: center;	
 }
 
 .partners-logo {
@@ -390,7 +388,7 @@ align-items: center;
 .partners-logo:hover,
 .partners-logo:focus{
 	fill: var(--active-color);
-	border: 1px solid var(--active-color);	
+	border: 1px solid var(--active-color);
 }
 
 
@@ -536,7 +534,7 @@ address ul li a:focus {
 .btn button:focus {
 	background-color: var(--active-color);
 	color: #fff;
-	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);	
 }
 
 /* 
