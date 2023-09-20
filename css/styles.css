@@ -170,10 +170,13 @@ align-items: center;
 */
 .hero {
 	max-width: 1600px;
+	height: 600px;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	margin: 0 auto;
-	background: url(../images/hero/bg-hero.png), lightgray 0px -147.517px / 100% 170.667% no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(196, 196, 196, 1);
+	background-image:linear-gradient( to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/bg-hero.png);
 	background-position: center;
 	background-size: cover;
 	letter-spacing: 0.06em;
@@ -375,12 +378,14 @@ align-items: center;
 
 .partners-logo {
 	width: 170px;
-	padding: 16px 32px;
+	height: 92px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
 	border: 1px solid var(--icons);
 	border-radius: 4px;
 	fill: var(--icons);
 }
-
 
 .partners-logo:hover,
 .partners-logo:focus{
@@ -442,11 +447,12 @@ address ul li a:focus {
 
 .footer-container{
 	display: flex;
-	gap: 70px;
+	align-items: baseline;
 }
-.footer-social{
-	margin-top: 15px;
+.footer-address{
+	margin-right: 70px;
 }
+
 .footer-social p{
 	font-size: 14px;
 	text-transform: uppercase;
@@ -515,8 +521,6 @@ address ul li a:focus {
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 0.03em;
 	font-weight: 500;
-	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
 }
 
 .btn:last-child {
@@ -532,6 +536,7 @@ address ul li a:focus {
 .btn button:focus {
 	background-color: var(--active-color);
 	color: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 /* 
